@@ -5,8 +5,9 @@ import Home from './components/pages/Home/App';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import videoRegister from './components/pages/register'
 import categoryRegister from './components/pages/Category'
+import error404 from './components/pages/Error'
 
-const iframe = <iframe src="https://mariosouto.com/flappy-bird-devsoutinho/" width="340" height="600" title='Flappy Bird'></iframe>;
+
 
 ReactDOM.render(
 
@@ -15,7 +16,7 @@ ReactDOM.render(
       <Route path='/' component={Home} exact/>
       <Route path='/register' component={videoRegister} exact/>
       <Route path='/register/category' component={categoryRegister} exact/>
-      <Route component={() => (iframe)}/>
+      <Route component={error404}/>
 
     </Switch>
   </BrowserRouter>,

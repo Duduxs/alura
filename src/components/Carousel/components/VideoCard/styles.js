@@ -18,12 +18,17 @@ export const VideoCardContainer = styled.a`
   align-items: flex-end;
   padding: 16px;
 
+
+
+  
+
   transition: opacity .3s;
   &:hover,
   &:focus {
     opacity: .5;
-    -webkit-transform: scale(0.9);
-    -webkit-transition: all 0.3s ease-in;
+   
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
     
   }
 
@@ -31,4 +36,6 @@ export const VideoCardContainer = styled.a`
   &:not(:first-child) {
     margin-left: 20px;
   }
+}
 `;
+

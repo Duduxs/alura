@@ -55,6 +55,7 @@
     text-decoration: none;
     display: inline-block;
     transition: opacity .3s;
+    background-color:rgba(0, 0, 0, 0.507);
   }
   .ButtonLink:hover,
   .ButtonLink:focus {
@@ -72,4 +73,7 @@
       border: 0;
       text-align: center;
     }
+  }
+  .bgColor{
+    background-image:linear-gradient(to top, rgba(11,11,11,1) 70%, rgba(18,18,18,1) 80%, rgba(19,19,19,1) 90%, rgba(0,0,0,1) 100%);
   }

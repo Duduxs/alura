@@ -1,25 +1,27 @@
 import styled from 'styled-components';
 
-
-
 export const Title = styled.h3`
-  font-style: normal;
-  font-weight: normal;
-  font-size: 35px;
-  line-height: 1;
-  margin-bottom: 16px;
-  display: inline-block;
-  padding: 20px;
-  background: red;
-  line-height: 1;
-  border-radius: 4px;
-  
+font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    margin-bottom: 32px;
+    display: inline-block;
+    line-height: 1;
+    padding: 20px;
+    transition: all 400ms ease 0s;
+    border-radius: 4px;
+    border-width: 0.1px;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+    
 
   @media (max-width: 800px) {
     font-size: 18px;
     padding: 10px;
   }
 `;
+
 
 export const ExtraLink = styled.a`
   margin-left: 16px;
@@ -38,7 +40,7 @@ export const ExtraLink = styled.a`
 `;
 
 export const VideoCardList = styled.ul`
-  margin: 0;
+  margin: 0px;
   padding-left: 0;
   padding-bottom: 32px;
   list-style: none;
