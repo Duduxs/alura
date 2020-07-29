@@ -30,7 +30,7 @@ export default function BannerMain({
           <ContentAreaContainer.Description>
             {videoDescription}
           </ContentAreaContainer.Description>
-          <a className='jogar' href="https://gamejolt.com/games/CrimeStreet/435222" target='_blank'><Button>Jogar</Button></a>
+          <a className='jogar' href="https://gamejolt.com/games/CrimeStreet/435222" target='_blank'rel="noopener noreferrer"><Button>Jogar</Button></a>
         </ContentAreaContainer.Item>
 
         <ContentAreaContainer.Item>
