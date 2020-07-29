@@ -8,7 +8,9 @@ import Footer from '../../Footer';
 
 function Home() {
   return (
-   <div style = {{background: "#141414"}}>
+
+   <div className='bgColor'>
+
      
         <Menu/>
         <BannerMain 

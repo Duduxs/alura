@@ -15,8 +15,10 @@ const Container = styled.ul`
     width: 30px;
     height: 30px;
     transform: initial;
+.slick-list { overflow: visible !important; }
+
     &:before {
-      font-size: 30px;
+      font-size: 45px;
     }
   }
   
@@ -29,7 +31,9 @@ const Container = styled.ul`
 `;
 
 export const SliderItem = styled.li`
-  margin-right: 16px;
+  margin-right: 1px;
+      scroll-behavior: smooth;
+      
   img {
     margin: 16px;
     width: 298px;
@@ -43,11 +47,14 @@ const Slider = ({ children }) => (
   <Container>
     <SlickSlider {...{
       dots: false,
-      infinite: false,
+      infinite: true,
       speed: 300,
       centerMode: false,
       variableWidth: true,
       adaptiveHeight: true,
+      slidesToScroll: 1,
+      initialSlide: 0,
+      
     }}
     >
       {children}

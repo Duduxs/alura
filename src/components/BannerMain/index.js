@@ -2,6 +2,7 @@ import React from 'react';
 import VideoIframeResponsive from './components/VideoIframeResponsive';
 import { BannerMainContainer, ContentAreaContainer, WatchButton } from './styles';
 import Button from '../Button'
+import '../Menu/menu.css'
 
 function getYouTubeId(youtubeURL) {
   return youtubeURL
@@ -30,7 +31,7 @@ export default function BannerMain({
           <ContentAreaContainer.Description>
             {videoDescription}
           </ContentAreaContainer.Description>
-          <a className='jogar' href="https://gamejolt.com/games/CrimeStreet/435222" target='_blank'rel="noopener noreferrer"><Button>Jogar</Button></a>
+          <a  href="https://gamejolt.com/games/CrimeStreet/435222" target='_blank'rel="noopener noreferrer"><Button className='ButtonLink'>Jogar</Button></a>
         </ContentAreaContainer.Item>
 
         <ContentAreaContainer.Item>
