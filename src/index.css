@@ -28,8 +28,12 @@
   min-height: calc(100vh - var(--bodyPaddingTop));
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
+.slick-slider .slick-list{
+  overflow:visible !important;
+}
 
 
 

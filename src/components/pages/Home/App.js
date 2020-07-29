@@ -8,7 +8,9 @@ import Footer from '../../Footer';
 
 function Home() {
   return (
+
    <div className='bgColor'>
+
      
         <Menu/>
         <BannerMain 

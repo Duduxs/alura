@@ -18,7 +18,7 @@ const Container = styled.ul`
 .slick-list { overflow: visible !important; }
 
     &:before {
-      font-size: 30px;
+      font-size: 45px;
     }
   }
   
