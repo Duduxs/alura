@@ -2,7 +2,7 @@ import React from 'react';
 import PageDefault from '../../PageDefault'
 import { Link } from 'react-router-dom';
 
-function videoRegister(){
+function VideoRegister(){
     return(
 
         <PageDefault>
@@ -15,4 +15,4 @@ function videoRegister(){
     );
 }
 
-export default videoRegister;
+export default VideoRegister;

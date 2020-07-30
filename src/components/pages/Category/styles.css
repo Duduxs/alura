@@ -1,0 +1,40 @@
+form {
+  width: 350px;
+  height: 500px;
+  margin: auto;
+}
+
+fieldset {
+  text-align: center;
+  padding: 10px;
+}
+
+fieldset#values {
+  margin-top: 50px;
+  text-align: left;
+}
+
+legend {
+  text-align: center;
+}
+
+#txtName, #txtDesc, #txtSpam, #txtColor {
+  margin-top: 6px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px white;
+}
+
+button {
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px white;
+}
+
+#categories {
+  list-style-type: none;
+}
+
+button {
+  margin-bottom: 6px;
+  margin-top: 10px;
+}
