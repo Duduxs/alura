@@ -1,22 +1,247 @@
 {
-    "categorias": [
-      {
-        "id": 1,
-        "name": "Front End",
-        "desc":"testandoo",
-        "cor": "#6BD1FF",
-        "link_extra": {
-          "text": "Formação de Front End na Alura",
-          "url": "https://www.alura.com.br/cursos-online-front-end"
-        }
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Games",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Meus Jogos Preferidos",
+        "url": "https://steamcommunity.com/id/Dudu--/"
       }
-     ],
-"videos": [
+    },
+    {
+      "id": 2,
+      "titulo": "Animes",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Melhores Animes Pra Assistir",
+        "url": "https://myanimelist.net/profile/duduxs"
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "Filmes",
+      "cor": "#353839",
+      "link_extra": {
+        "text": "Minha Lista de Filmes de Terror",
+        "url": "https://incrivel.club/criatividade-arte/11-contos-aterrorizantes-de-edgar-allan-poe-698860/"
+      }
+    },
+    {
+      "id": 4,
+      "titulo": "Séries",
+      "cor": "orange",
+      "link_extra": {
+        "text": "Séries Que Eu Curto Bastante",
+        "url": "https://www.youtube.com/watch?v=oJhBh0scBOU"
+      }
+    },
+    {
+      "id": 5,
+      "titulo": "Músicas",
+      "cor": "red",
+      "link_extra": {
+        "text": "Algumas Das Milhares De Músicas Que Escuto",
+        "url": "https://www.youtube.com/watch?v=lVaBvyzuypw"
+      }
+    },
+    {
+      "id": 6,
+      "titulo": "Professores",
+      "cor": "#6b5be2",
+      "link_extra": {
+        "text": "Os Melhores Professores de Tec Que Eu Já Tive Contato",
+        "url": "https://www.twitch.tv/marcobrunodev?utm_campaign=imersao_react_extra_plantao_de_duvidas&utm_medium=email&utm_source=RD%20Station"
+      }
+    }
+  ],
+  "videos": [
     {
       "id": 1,
       "categoriaId": 1,
-      "name": "SEO com React",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+      "titulo": "O que é o Crime Street?",
+      "description": "Crime Street é um jogo singleplayer de beat 'em up. Foi inspirado em grandes clássicos como o Battletoads, Final Fight e o DD. Sua missão como jogador é derrotar o maior criminoso do Rio de Janeiro: MURALHA, assim libertando toda a cidade do crime.",
+      "url": "https://www.youtube.com/watch?v=gJojSckSm-0&feature=emb_title"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "Terraria",
+      "url": "https://www.youtube.com/watch?v=w7uOhFTrrq0"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "Kung Fu Clicker",
+      "url": "https://www.youtube.com/watch?v=9n8ZvayFri0"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "Dead By Daylight",
+      "url": "https://www.youtube.com/watch?v=JGhIXLO3ul8"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "Skullgirls",
+      "url": "https://www.youtube.com/watch?v=jxLZEdDfR_g"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "Paladins",
+      "url": "https://www.youtube.com/watch?v=dEwEC2MKgeQ"
+    },
+    {
+      "id": 7,
+      "categoriaId": 1,
+      "titulo": "Bit Heroes",
+      "url": "https://www.youtube.com/watch?v=VpWd1D-ttOw"
+    },
+    {
+      "id": 8,
+      "categoriaId": 1,
+      "titulo": "Habbo",
+      "url": "https://www.youtube.com/watch?v=bosfP5sFz3s"
+    },
+    {
+      "id": 9,
+      "categoriaId": 2,
+      "titulo": "Nichijou",
+      "url": "https://www.youtube.com/watch?v=53ejT195VVc"
+    },
+    {
+      "id": 10,
+      "categoriaId": 2,
+      "titulo": "Kono Subarashii Sekai ni Shukufuku wo!(KonoSuba)",
+      "url": "https://www.youtube.com/watch?v=N1AO7k2o78g"
+    },
+    {
+      "id": 11,
+      "categoriaId": 2,
+      "titulo": "Saiki Kusuo no Ψ-nan",
+      "url": "https://www.youtube.com/watch?v=YxmqcJpXVvY"
+    },
+    {
+      "id": 12,
+      "categoriaId": 2,
+      "titulo": "Yakusoku no Neverland",
+      "url": "https://www.youtube.com/watch?v=ApLudqucq-s"
+    },
+    {
+      "id": 13,
+      "categoriaId": 2,
+      "titulo": "Sakamoto Desu ga?",
+      "url": "https://www.youtube.com/watch?v=r-hePnrS0-Q"
+    },
+    {
+      "id": 14,
+      "categoriaId": 3,
+      "titulo": "Hush A Morte Ouve",
+      "url": "https://www.youtube.com/watch?v=Q_P8WCbhC6s"
+    },
+    {
+      "id": 15,
+      "categoriaId": 3,
+      "titulo": "Melhor forma de aprender Python",
+      "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+    },
+    {
+      "id": 16,
+      "categoriaId": 3,
+      "titulo": "Nunca Diga Seu Nome",
+      "url": "https://www.youtube.com/watch?v=Ud4Zk2NZRQI"
+    },
+    {
+      "id": 17,
+      "categoriaId": 3,
+      "titulo": "Jogo Perigoso",
+      "url": "https://www.youtube.com/watch?v=8mZKeo0g_vE"
+    },
+    {
+      "id": 18,
+      "categoriaId": 3,
+      "titulo": "Secuestro",
+      "url": "https://www.youtube.com/watch?v=HHC6NF0Sny0"
+    },
+    {
+      "id": 19,
+      "categoriaId": 4,
+      "titulo": "Vis a Vis",
+      "url": "https://www.youtube.com/watch?v=ceNKwOvSVm8"
+    },
+    {
+      "id": 20,
+      "categoriaId": 4,
+      "titulo": "Orange Is The New Black",
+      "url": "https://www.youtube.com/watch?v=vY0qzXi5oJg"
+    },
+    {
+      "id": 21,
+      "categoriaId": 4,
+      "titulo": "Rick and Morty",
+      "url": "https://www.youtube.com/watch?v=4E7uO4_S2rw"
+    },
+    {
+      "id": 22,
+      "categoriaId": 4,
+      "titulo": "Lucifer",
+      "url": "https://www.youtube.com/watch?v=X4bF_quwNtw"
+    },
+    {
+      "id": 23,
+      "categoriaId": 5,
+      "titulo": "As I Lay Dying - Redefined",
+      "url": "https://www.youtube.com/watch?v=UnQUDQpnG3M"
+    },
+    {
+      "id": 24,
+      "categoriaId": 5,
+      "titulo": "Rhapsody - Emerald Sword",
+      "url": "https://www.youtube.com/watch?v=y5kLxQGbRYg"
+    },
+    {
+      "id": 25,
+      "categoriaId": 5,
+      "titulo": "Rhapsody - Reign of Terror",
+      "url": "https://www.youtube.com/watch?v=-0OfBtGwPHc"
+    },
+    {
+      "id": 26,
+      "categoriaId": 5,
+      "titulo": "Rhapsody - Dawn of Victory",
+      "url": "https://www.youtube.com/watch?v=0L_iOnLNt9M"
+    },
+    {
+      "id": 27,
+      "categoriaId": 6,
+      "titulo": "Esse aqui eu considero o melhor de todos, didática incrível para todos os níveis.",
+      "url": "https://www.youtube.com/watch?v=S9uPNppGsGo"
+    },
+    {
+      "id": 28,
+      "categoriaId": 6,
+      "titulo": "Se você pretende atuar no back-end, esse professor é indispensável.",
+      "url": "https://www.youtube.com/watch?v=8aYQjDboNbw&t=1s"
+    },
+    {
+      "id": 29,
+      "categoriaId": 6,
+      "titulo": "Ele tem um ensino um pouco mais detalhado, então você precisa ter bastante paciência nas aulas. Um professor incrível.",
+      "url": "https://www.youtube.com/watch?v=gOMDx__fJb4"
+    },
+    {
+      "id": 30,
+      "categoriaId": 6,
+      "titulo": "Para quem for entrar na área de jogos este é o Guilherme é o prof indicado.",
+      "url": "https://www.youtube.com/watch?v=7V__cZdgnjU"
+    },
+    {
+      "id": 31,
+      "categoriaId": 6,
+      "titulo": "Professor ligado no 440V, porém muito bom para quem quer ingressar em uma tecnologia de forma rápida e sem dar muitas voltas.",
+      "url": "https://www.youtube.com/watch?v=XcU9GEUZTQA&t=11s"
     }
   ]
 }

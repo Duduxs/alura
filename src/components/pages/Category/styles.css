@@ -9,6 +9,12 @@ fieldset {
   padding: 10px;
 }
 
+ul li{
+  float:left;
+  margin-right: 1px;
+}
+
+
 fieldset#values {
   margin-top: 50px;
   text-align: left;

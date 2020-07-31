@@ -3,46 +3,31 @@ import PageDefault from '../../PageDefault'
 import FormField from '../../FormField'
 import './styles.css';
 import Button from '../../Button'
+import useForm from '../../hooks/useForm';
+
 
 function CategoryRegister() {
   const initialValues = {
-    name: '',
+    titulo: '',
     desc: '',
     color: '',
   }
   const [categories, setCategorias] = useState([]);
-  const [values, setValues] = useState(initialValues);
+  const { handleChange, values, clearForm } = useForm(initialValues);
 
-  function setValue(chave, valor) {
-
-    setValues({
-      ...values,
-      [chave]: valor, // nome: 'valor'
-    })
-  }
-
-  function handleChange(infosDoEvento) {
-    setValue(
-      infosDoEvento.target.getAttribute('name'),
-      infosDoEvento.target.value
-    );
-  }
 
   useEffect(() => {
-    /*/Change BASE_URL, PUT TERN OPERATOR AND TWO URL, MAKE THE DEPLOY/*/
-    const BASE_URL = "http://localhost:8080/categorias";
+    
+    const BASE_URL =  window.location.hostname.includes('localhost')
+    ? 'http://localhost:8080/categorias'
+    : 'https://eduflix-dusky.vercel.app/register/category';
     fetch(BASE_URL).then(async (Response) =>{
       const response = await Response.json();
       setCategorias([
         ...response,
-      ])
-    })
-    .then(() =>{
-
-    }
-    );
-
-  }, []);
+      ]);
+    });
+  },[]);
 
   return (
     <PageDefault>
@@ -52,23 +37,23 @@ function CategoryRegister() {
         infos.preventDefault();
         setCategorias([
           ...categories,
-          values
+          values,
         ]);
 
-        setValues(initialValues)
+        clearForm();
       }}>
 
         <fieldset>
 
-          <legend>Cadastro da Categoria {values.name}</legend>
+          <legend>Cadastro da Categoria {values.titulo}</legend>
 
           <FormField
             id="txtName"
             label="Nome da Categoria"
             type="text"
-            name="name"
+            name="titulo"
             placeholder='Jogos, Filmes, Revistas...'
-            value={values.name}
+            value={values.titulo}
             onChange={handleChange}
           />
 
@@ -95,9 +80,9 @@ function CategoryRegister() {
 
           <Button>
             Cadastrar
-                </Button>
+          </Button>
 
-          {categories.lenght == 0 &&(
+          {categories.length === 0 &&(
           <div>
             Loading...
           </div>
@@ -111,15 +96,14 @@ function CategoryRegister() {
           <legend>Categorias Cadastradas</legend>
 
           <ul id='categories'>
-            {categories.map((category, indice) => {
-              return (
+            {categories.map((category) => (
                 <pre>
-                  <li key={`${category}${indice}`} style={{ color: category.color}}>
-                    {(category.name + "      " + category.desc)}
+                  <li key={`${category.titulo}`} style={{ color: category.color}}>
+                    {category.titulo+"✔️"}
                   </li>
                 </pre>
-              )
-            })}
+              
+            ))}
           </ul>
 
         </fieldset>
