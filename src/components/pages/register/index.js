@@ -10,7 +10,7 @@ import categoriasRepository from '../../../repositories/categorias';
 function VideoRegister(){
     const history = useHistory();
     const [categorias, setCategorias] = useState([]);
-    const { handleChange, values } = useForm({
+    const { handleChange, values, } = useForm({
       
       titulo: 'Primario',
       url: 'https://www.youtube.com/watch?v=aHolTqDXipc',
@@ -18,7 +18,7 @@ function VideoRegister(){
     });
 
     useEffect(() =>{
-        categoriasRepository
+      categoriasRepository
         .getAll()
         .then((categoriasFromServer) =>{
             setCategorias(categoriasFromServer);
@@ -30,22 +30,21 @@ function VideoRegister(){
     return(
 
         <PageDefault>
-      
 
         <form onSubmit={(event) => {
         event.preventDefault();
 
     
           const categoriaEscolhida = categorias.find((categoria) =>{
-            return categoria.titulo === values.categoria;
+           return categoria.titulo === values.categoria
+ 
           });
 
-          console.log('categoriaId', categoriaEscolhida);
 
         videosRepository.create({
           titulo: values.titulo,
           url: values.url,
-          categoriaId: 1,
+          categoriaId: categoriaEscolhida.id,
         })
           .then(() => {
             console.log('Cadastrou com sucesso!');
@@ -58,7 +57,6 @@ function VideoRegister(){
 
                <FormField
                 label="Título do Vídeo"
-                type="text"
                 name="titulo"
                 placeholder='Meu novo dog...'
                 value={values.titulo}

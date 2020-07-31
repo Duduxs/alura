@@ -12,6 +12,7 @@ function Home() {
 
     categoriasRepository.getAllWithVideos()
       .then((categoriasComVideos) => {
+       
         setDadosIniciais(categoriasComVideos);
       })
       .catch((err) => {

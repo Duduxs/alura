@@ -110,9 +110,6 @@ function CategoryRegister() {
 
       </form>
 
-
-
-
     </PageDefault>
   )
 }

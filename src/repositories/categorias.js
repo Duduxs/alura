@@ -11,7 +11,7 @@ function getAll() {
         return resposta;
       }
 
-      throw new Error('Não foi possível pegar os dados :(');
+      throw new Error('Não foi possível pegar os dados');
     });
 }
 
@@ -22,6 +22,7 @@ function getAllWithVideos(){
 
         if(Response.ok){
         const response = await Response.json();
+        
         return response;
         }
 
