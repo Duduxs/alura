@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import PageDefault from '../../PageDefault'
-import FormField from '../../FormField'
+import PageDefault from '../../../components/PageDefault'
+import FormField from '../../../components/FormField'
 import './styles.css';
-import Button from '../../Button'
+import Button from '../../../components/Button'
 
 function CategoryRegister() {
   const initialValues = {
@@ -97,7 +97,7 @@ function CategoryRegister() {
             Cadastrar
                 </Button>
 
-          {categories.lenght == 0 &&(
+          {categories.lenght === 0 &&(
           <div>
             Loading...
           </div>
