@@ -14,13 +14,8 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path='/' component={Home} exact/>
-<<<<<<< HEAD
-      <Route path='/register' component={videoRegister} />
-      <Route path='/register/category' component={categoryRegister} />
-=======
       <Route path='/register' component={videoRegister}  exact/>
       <Route path='/register/category' component={categoryRegister} exact />
->>>>>>> develop
       <Route component={error404}/>
 
     </Switch>

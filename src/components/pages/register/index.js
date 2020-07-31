@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-import React from 'react';
-import PageDefault from '../../../components/PageDefault'
-import { Link } from 'react-router-dom';
-=======
 import React, {useState, useEffect}from 'react';
 import PageDefault from '../../PageDefault';
 import { Link, useHistory } from 'react-router-dom';
@@ -11,8 +6,6 @@ import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import videosRepository from '../../../repositories/videos';
 import categoriasRepository from '../../../repositories/categorias';
-
->>>>>>> develop
 
 function VideoRegister(){
     const history = useHistory();

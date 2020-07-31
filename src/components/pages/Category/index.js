@@ -2,13 +2,9 @@ import React, { useState, useEffect } from 'react';
 import PageDefault from '../../../components/PageDefault'
 import FormField from '../../../components/FormField'
 import './styles.css';
-<<<<<<< HEAD
-import Button from '../../../components/Button'
-=======
 import Button from '../../Button'
 import useForm from '../../hooks/useForm';
 
->>>>>>> develop
 
 function CategoryRegister() {
   const initialValues = {
@@ -19,32 +15,12 @@ function CategoryRegister() {
   const [categories, setCategorias] = useState([]);
   const { handleChange, values, clearForm } = useForm(initialValues);
 
-<<<<<<< HEAD
-    setValues({
-      ...values,
-      [chave]: valor, 
-    })
-  }
-
-  function handleChange(infosDoEvento) {
-    setValue(
-      infosDoEvento.target.getAttribute('name'),
-      infosDoEvento.target.value
-    );
-  }
-
-  useEffect(() => {
-
-    const BASE_URL =  window.location.hostname.includes('localhost')
-    ? 'https://eduflix-dusky.vercel.app/':'https://eduflix.herokuapp.com/categorias';
-=======
 
   useEffect(() => {
     
     const BASE_URL =  window.location.hostname.includes('localhost')
     ? 'http://localhost:8080/categorias'
     : 'https://eduflix-dusky.vercel.app/register/category';
->>>>>>> develop
     fetch(BASE_URL).then(async (Response) =>{
       const response = await Response.json();
       setCategorias([
@@ -106,11 +82,7 @@ function CategoryRegister() {
             Cadastrar
           </Button>
 
-<<<<<<< HEAD
-          {categories.lenght === 0 &&(
-=======
           {categories.length === 0 &&(
->>>>>>> develop
           <div>
             Loading...
           </div>
