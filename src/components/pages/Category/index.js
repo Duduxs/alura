@@ -4,6 +4,7 @@ import FormField from '../../../components/FormField'
 import './styles.css';
 import Button from '../../Button'
 import useForm from '../../hooks/useForm';
+import categoriasRepository from '../../../repositories/categorias'
 
 
 function CategoryRegister() {
@@ -12,6 +13,14 @@ function CategoryRegister() {
     desc: '',
     color: '',
   }
+  useEffect(() => {
+    categoriasRepository
+      .getAll()
+      .then((categoriasFromServer) => {
+        setCategorias(categoriasFromServer);
+      });
+  }, []);
+
   const [categories, setCategorias] = useState([]);
   const { handleChange, values, clearForm } = useForm(initialValues);
 
@@ -39,9 +48,16 @@ function CategoryRegister() {
           ...categories,
           values,
         ]);
-
-        clearForm();
-      }}>
+      categoriasRepository.create({
+        titulo: values.titulo,
+        cor: values.color,
+        link_extra: {
+          text: values.desc
+        },
+      });
+      clearForm();
+    }}
+      >
 
         <fieldset>
 

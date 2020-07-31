@@ -10,6 +10,7 @@ import categoriasRepository from '../../../repositories/categorias';
 function VideoRegister(){
     const history = useHistory();
     const [categorias, setCategorias] = useState([]);
+    const categoryTitles = categorias.map(({ titulo }) => titulo);
     const { handleChange, values, } = useForm({
       
       titulo: 'Primario',
@@ -79,6 +80,8 @@ function VideoRegister(){
               placeholder='Jogos, Filmes, Revistas...'
               value={values.categoria}
               onChange={handleChange}
+              suggestions={categoryTitles}
+
             />
     
             <Button type="submit">
