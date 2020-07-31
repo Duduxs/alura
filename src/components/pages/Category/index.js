@@ -20,7 +20,7 @@ function CategoryRegister() {
     
     const BASE_URL =  window.location.hostname.includes('localhost')
     ? 'http://localhost:8080/categorias'
-    : 'https://eduflix-dusky.vercel.app/register/category';
+    : 'https://eduflix.herokuapp.com/categorias';
     fetch(BASE_URL).then(async (Response) =>{
       const response = await Response.json();
       setCategorias([
