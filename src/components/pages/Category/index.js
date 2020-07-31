@@ -17,7 +17,7 @@ function CategoryRegister() {
 
     setValues({
       ...values,
-      [chave]: valor, // nome: 'valor'
+      [chave]: valor, 
     })
   }
 
@@ -29,7 +29,7 @@ function CategoryRegister() {
   }
 
   useEffect(() => {
-    /*/Change BASE_URL, PUT TERN OPERATOR AND TWO URL, MAKE THE DEPLOY/*/
+
     const BASE_URL = "http://localhost:8080/categorias";
     fetch(BASE_URL).then(async (Response) =>{
       const response = await Response.json();

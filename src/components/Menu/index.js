@@ -7,7 +7,7 @@ import Button from '../Button'
 
 function Menu(){
     return(
-        //When the user clicker at logo, he'll be appointed to the menu
+    
         
             <nav className='Menu'>
                 <a href='/'>
