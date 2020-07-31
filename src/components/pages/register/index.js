@@ -1,12 +1,12 @@
 import React, {useState, useEffect}from 'react';
 import PageDefault from '../../PageDefault';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import useForm from '../../../components/hooks/useForm';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import videosRepository from '../../../repositories/videos';
 import categoriasRepository from '../../../repositories/categorias';
-
+import Menu from '../../Menu'
 function VideoRegister(){
     const history = useHistory();
     const [categorias, setCategorias] = useState([]);
@@ -87,12 +87,15 @@ function VideoRegister(){
             <Button type="submit">
               Cadastrar
             </Button>
+  
         </fieldset>
+
+
+        <Menu local='/register/category' texto='Nova categoria'/>
+     
       </form>
 
-           <Link to='/register/category'>
-               Cadastrar Categoria
-           </Link>
+        
         </PageDefault>
     );
 }

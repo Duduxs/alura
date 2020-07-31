@@ -21,7 +21,7 @@ padding: ${paddingAll};
 function PageDefault({ children , paddingAll}) {
     return (
         <>
-            <Menu />
+            <Menu local='/register' texto='Novo vídeo'/>
                 <Main paddingAll={paddingAll}>
                 {children}
                 </Main>
