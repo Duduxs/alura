@@ -30,7 +30,8 @@ function CategoryRegister() {
 
   useEffect(() => {
 
-    const BASE_URL = "http://localhost:8080/categorias";
+    const BASE_URL =  window.location.hostname.includes('localhost')
+    ? 'https://eduflix-dusky.vercel.app/':'https://eduflix.herokuapp.com/categorias';
     fetch(BASE_URL).then(async (Response) =>{
       const response = await Response.json();
       setCategorias([
