@@ -1,4 +1,5 @@
 import React from 'react';
+import '../pages/Category/styles.css'
 
 function FormField({id, label, type, name, placeholder, value, onChange}){
     return(
@@ -16,7 +17,9 @@ function FormField({id, label, type, name, placeholder, value, onChange}){
                   name={name} 
                   placeholder={placeholder} 
                   onChange={onChange}
-                    ></textarea> : <input maxLength='35' 
+                    ></textarea> 
+                    : 
+                    <input maxLength='35' 
                 id={id}
                 type={type}
                 value={value}

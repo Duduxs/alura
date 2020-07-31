@@ -18,13 +18,6 @@ legend {
   text-align: center;
 }
 
-#txtName, #txtDesc, #txtSpam, #txtColor {
-  margin-top: 6px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px white;
-}
-
 button {
   border-radius: 10px;
   box-shadow: 2px 2px 2px white;
@@ -32,9 +25,32 @@ button {
 
 #categories {
   list-style-type: none;
+
 }
 
 button {
   margin-bottom: 6px;
   margin-top: 10px;
+}
+
+input, textarea {
+  background: #53585D;
+  color: #F5F5F5;
+  outline: 0;
+  border: 0;
+  border-top: 4px solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom: 4px solid #53585D;
+  resize: none;
+  border-radius: 4px;
+  transition: box-shadow 1s;
+  box-shadow: 2px 2px 2px white;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+input:focus, textarea:focus {
+  box-shadow: 2px 2px 2px red;
+  transition: box-shadow 1s;
 }
