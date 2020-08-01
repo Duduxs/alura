@@ -114,7 +114,7 @@ function CategoryRegister() {
           <ul id='categories'>
             {categories.map((category) => (
                 <pre>
-                  <li key={`${category.titulo}`} style={{ color: category.color}}>
+                  <li key={`${category.titulo}`}>
                     {category.titulo+"✔️"}
                   </li>
                 </pre>

@@ -53,24 +53,6 @@
         "text": "Os Melhores Professores de Tec Que Eu Já Tive Contato",
         "url": "https://www.twitch.tv/marcobrunodev?utm_campaign=imersao_react_extra_plantao_de_duvidas&utm_medium=email&utm_source=RD%20Station"
       }
-    },
-    {
-      "titulo": "Teste",
-      "link_extra": {},
-      "id": 7
-    },
-    {
-      "titulo": "e",
-      "link_extra": {},
-      "id": 8
-    },
-    {
-      "titulo": "aa",
-      "cor": "#0008eb",
-      "link_extra": {
-        "text": "xx"
-      },
-      "id": 9
     }
   ],
   "videos": [
@@ -261,5 +243,7 @@
       "titulo": "Professor ligado no 440V, porém muito bom para quem quer ingressar em uma tecnologia de forma rápida e sem dar muitas voltas.",
       "url": "https://www.youtube.com/watch?v=XcU9GEUZTQA&t=11s"
     }
+  
+ 
   ]
 }

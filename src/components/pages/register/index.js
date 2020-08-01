@@ -13,9 +13,9 @@ function VideoRegister(){
     const categoryTitles = categorias.map(({ titulo }) => titulo);
     const { handleChange, values, } = useForm({
       
-      titulo: 'Primario',
-      url: 'https://www.youtube.com/watch?v=aHolTqDXipc',
-      categoria: 'Jogos',
+      titulo: '',
+      url: '',
+      categoria: '',
     });
 
     useEffect(() =>{
@@ -77,7 +77,7 @@ function VideoRegister(){
               label="Categoria"
               type="text"
               name="categoria"
-              placeholder='Jogos, Filmes, Revistas...'
+              placeholder='Jogos, Revistas...'
               value={values.categoria}
               onChange={handleChange}
               suggestions={categoryTitles}
